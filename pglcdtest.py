@@ -42,7 +42,7 @@ while running:
 
         #display text at 90 degrees clockwise, filling the full height of the display saying "THIS WAY UP"
         font = pygame.font.SysFont("Arial", 12)
-        mousepos= pygame.mouse.get_pos()
+        mousepos= pygame.mouse.get_rel()
         text = font.render(f"{mousepos[0],mousepos[1]}", True, (255, 255, 255))
         #text = pygame.transform.rotate(text, 90)
         #draw a black rectangle to clear the screen
